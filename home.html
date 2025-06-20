@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/web.css" />
+  <link rel="shortcut icon" href="assets/images/nitd-logo.png" type="image/x-icon">
+  <title>NIT Delhi | Home</title>
+</head>
+
+<body>
+  <header>
+    <!-- Top bar -->
+    <div class="main-head-items">
+      <div class="logo">
+        <img class="white-logo" src="assets/images/nitd-logo.png" alt="NITD Subtle Logo" class="white-logo">
+        <h1 class="logo-text">NATIONAL INSTITUTE OF TECHNOLOGY DELHI</h1>
+      </div>
+      <div class="loc-component">
+        <div class="loc-text-group">
+          <h3 class="loc-text">NITD</h3>
+          <h3 class="loc-text">GT Karnal Road, Delhi, India</h3>
+        </div>
+        <img class="loc-icon" src="assets/icons/loc-dark-navy-icon.svg" alt="loc-icon">
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="logo-title">
+          <img src="assets/images/nitd-logo.png" class="logo1" alt="NIT Delhi Logo" />
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Institute</a>
+            <ul class="dropdown-content">
+              <li><a href="institute/about.html">About</a></li>
+              <li><a href="institute/vision.html">Vision</a></li>
+              <li><a href="institute/history.html">History</a></li>
+              <li class="dropdown-sub">
+                <a href="#">Central Facilities ▸</a>
+                <ul class="dropdown-subcontent">
+                  <li><a href="institute/central facilities/central_lib.html">Central Library</a></li>
+                  <li><a href="institute/central facilities/comp_centre.html">Computer Centre</a></li>
+                  <li><a href="institute/central facilities/ims.html">Institute Management Centre</a></li>
+                  <li><a href="institute/central facilities/health_centre.html">Health Centre</a></li>
+                  <li>
+                    <a href="institute/central facilities/sports_sec.html">Sports Section</a>
+                    <a href="institute/central facilities/workshop_fac.html">Workshop Facilities</a>
+                    <a href="institute/central facilities/scstobc.html">SC/ST & OBC Cell</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Admissions</a>
+            <ul class="dropdown-content">
+              <li><a href="admissions/btech_ad.html">JEE Mains</a></li>
+              <li><a href="admissions/mtech_ad.html">GATE</a></li>
+              <li><a href="admissions/dasa.html">International [DASA]</a></li>
+              <li><a href="admissions/phd_ad.html">Ph.D Admission</a></li>
+              <li>
+                <a href="admissions/admissions.html">Criteria/Guidelines</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Administration</a>
+            <ul class="dropdown-content">
+              <li class="dropdown-sub">
+                <a href="#">Public Disclosure ▸</a>
+                <ul class="dropdown-subcontent">
+                  <li>
+                    <a href="administration/public disclosure/rti.html">RTI</a>
+                  </li>
+                  <li>
+                    <a href="administration/public disclosure/policy.html">Regulations & Policy</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="administration/dean.html">Dean</a></li>
+              <li>
+                <a href="administration/hod.html">Head of Department</a>
+              </li>
+              <li>
+                <a href="administration/director.html">Director's Profile</a>
+              </li>
+              <li><a href="administration/hostel.html">Hostel</a></li>
+              <li><a href="administration/registrar.html">Registrar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Academics</a>
+            <ul class="dropdown-content">
+              <li class="dropdown-sub">
+                <a href="#">Departments ▸</a>
+                <ul class="dropdown-subcontent">
+                  <li>
+                    <a href="academics/departments/aero.html">Aerospace Engineering</a>
+                  </li>
+                  <li>
+                    <a href="academics/departments/aids.html">Artificial Intelligence & Data Science</a>
+                  </li>
+                  <li>
+                    <a href="academics/departments/civil.html">Civil Engineering
+                    </a>
+                  </li>
+                  <li>
+                    <a href="academics/departments/cse.html">Computer Science & Engineering</a>
+                  </li>
+                  <li>
+                    <a href="academics/departments/ee.html">Electrical Engineering</a>
+                  </li>
+                  <li>
+                    <a href="academics/departments/ece.html">Electronics and Communication Engineering & VLSI</a>
+                  </li>
+                  <li>
+                    <a href="academics/departments/mech.html">Mechanical Engineering</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="academics/academic_team.html">Academics Team</a></li>
+              <li><a href="academics/academic_award.html">Academics Award of Excellence</a></li>
+              <li><a href="academics/acad_counsellor.html">Academics Counsellors</a></li>
+              <li class="dropdown-sub">
+                <a href="#">Course Curriculum ▸</a>
+                <ul class="dropdown-subcontent">
+                  <li>
+                    <a href="academics/course curriculum/btech_curr.html">BTech Curriculum</a>
+                  </li>
+                  <li>
+                    <a href="academics/course curriculum/mtech_curr.html">MTech Curriculum</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Students</a>
+            <ul class="dropdown-content">
+              <li class="dropdown-sub">
+                <a href="#">Aspiring Students ▸</a>
+                <ul class="dropdown-subcontent">
+                  <li>
+                    <a href="students/aspiring students/why.html">Why NITD?</a>
+                  </li>
+                  <li>
+                    <a href="students/aspiring students/explore.html">Visit & Explore!</a>
+                  </li>
+                  <li>
+                    <a href="students/aspiring students/stud_diaries.html">Student Diaries..
+                    </a>
+                  </li>
+                  <li>
+                    <a href="students/aspiring students/virtualtour.html">Campus Virtual Tour</a>
+                  </li>
+                  <li>
+                    <a href="students/aspiring students/events.html">Events Organised</a>
+                  </li>
+                  <li>
+                    <a href="students/aspiring students/courses.html">Courses Offered</a>
+                  </li>
+                  <li>
+                    <a href="students/aspiring students/hostel.html">Hostel Facility</a>
+                  </li>
+                  <li>
+                    <a href="students/aspiring students/mess_canteen.html">Mess & Canteen Facility</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-sub">
+                <a href="#">Existing Students ▸</a>
+                <ul class="dropdown-subcontent">
+                  <li>
+                    <a href="students/existing students/timetable.html">Time Table</a>
+                  </li>
+                  <li>
+                    <a href="students/existing students/calendar.html">Calendar</a>
+                  </li>
+                  <li>
+                    <a href="students/existing students/downloads.html">Downloads</a>
+                  </li>
+                  <li>
+                    <a href="students/existing students/feestructure.html">Fee Structure</a>
+                  </li>
+                  <li>
+                    <a href="students/existing students/refund.html">Withdrawal & Refund Policy</a>
+                  </li>
+                  <li>
+                    <a href="students/existing students/notifications.html">Notifications</a>
+                  </li>
+                  <li>
+                    <a href="students/existing students/students_stats.html">Students Statistics</a>
+                  </li>
+                  <li>
+                    <a href="students/existing students/student's_corner.html">Student's Corner</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="faculty.html">Faculty</a>
+            <ul class="dropdown-content">
+              <li><a href="faculty/assessment.html">Assessments</a></li>
+              <li>
+                <a href="faculty/faculty_corner.html">Faculty's Corner</a>
+              </li>
+              <li><a href="faculty/leave.html">Leave</a></li>
+              <li><a href="faculty/teaching.html">Teaching</a></li>
+              <li><a href="faculty/feedback.html">Feedback</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Research</a>
+            <ul class="dropdown-content">
+              <li><a href="research/r&d.html">R&D Portal</a></li>
+              <li><a href="research/res_project.html">Research Projects</a></li>
+              <li><a href="research/patent.html">Patents</a></li>
+              <li><a href="research/conference.html">Conference/Seminars</a></li>
+              <li>
+                <a href="research/res_facility.html">Research Facilities</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="logo-right">
+          <img src="assets/images/constitution-logo.png" class="logo2" alt="75th R.Day Constitution Logo" />
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="hero-section">
+      <div class="img-wrapper">
+        <img src="assets/images/Our glorious campus.Click Credits- @sowmyakranthi_03.png" alt="">
+  
+        <div class="hero-content">
+          <h1>Reshaping The Future Here At NIT Delhi</h1>
+          <p>Be a part of your dream institution.</p>
+          <button class="hero-content-button">Explore More</button>
+        </div>
+
+        <div class="circle-img">
+          <img src="assets/images/DSC_3395.jpg" alt="nitd-students">
+        </div>
+  
+        <div class="vector-group">
+          <div class="circle-vector circle-1"></div>
+          <div class="circle-vector circle-2"></div>
+          <div class="circle-vector circle-3"></div>
+        </div>
+        
+      </div>
+      </div>
+      <section class="events-news-section">
+        <div class="section-head">
+          <h1>News & Events Section</h1>
+        <p>--- Stay Updated with the latest News and Events happening at NIT Delhi ---</p>
+        </div>
+        <div class="news-events-container">
+          <div class="announcement-card">
+            <div class="announcement-header">
+              <div class="header-items">
+                <i class="fa-solid fa-bullhorn fa-2x"></i>
+                <h2>Announcements</h2>
+              </div>
+              <button class="cta-button"><a href="#">VIEW ALL</a></button>
+            </div>
+            <div class="announcement-container">
+              <!-- Repeat this .announcement-item block for adding more announcements -->
+              <div class="announcement-item">
+                <div class="announcement-headline">
+                  <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  <div class="scroll-wrapper">
+                    <div class="scroll-text">NIT Delhi is ranked 45 in Engineering Category by NIRF 2024 among 4000 colleges throughout India.</div>
+                  </div>
+                </div>
+                <div class="announcement-details">
+                  <p>NIT Delhi has secured 45th position in the NIRF Engineering category for 2024, evaluated among over 4000 colleges across India.This ranking highlights our academic excellence and dedication to innovation. Learn more on our Ranking Section.</p>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-headline">
+                  <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  <div class="scroll-wrapper">
+                    <div class="scroll-text">Registration link for M.Tech (SFS) admission for the Academic Year 2025-26</div>
+                  </div>
+                </div>
+                <div class="announcement-details">
+                  <p>To register for the M.Tech (SFS) admission for 2025-26 :- <a href="https://forms.gle/oRZsQXQTaAzYkquZ8" target="_blank">Click here</a></p>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-headline">
+                  <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  <div class="scroll-wrapper">
+                    <div class="scroll-text">Department Wise Syllabus and Weightage of Marks for M.Tech (SFS) Admissions in the Academic Year 2025-26</div>
+                  </div>
+                </div>
+                <div class="announcement-details">
+                  <p>To get the detailed Syllabus and Weightage for M.Tech admission in 2025-26 :- <a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/Department-Wise-Syllabus-and-Weightage-of-Marks-_M.Tech-SFS-Admissions-for-the-Academic-Year-2025-26.pdf" target="_blank">Click here</a></p>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-headline">
+                  <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  <div class="scroll-wrapper">
+                    <div class="scroll-text">Information Brochure with Application Form for M.Tech (SFS) Admission for the Academic Year 2025-26</div>
+                  </div>
+                </div>
+                <div class="announcement-details">
+                  <p>To download the information brochure with Application form for M.Tech (SFS) admission for the Academic Year 2025-26 :- <a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/Information-Brochure-and-Application-Form-_M.Tech-SFS-Admission-_Academic-Year-2025-26.pdf" target="_blank">Click here</a></p>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-headline">
+                  <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  <div class="scroll-wrapper">
+                    <div class="scroll-text">Applications for DAViSE Lab Summer Internship 2025 Open Now !</div>
+                  </div>
+                </div>
+                <div class="announcement-details">
+                  <p>The applications for the DAVISE Lab Summer Internship 2025 are opened now! You can register now here :- <a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/Summer.pdf" target="_blank">Register Now!</a></p>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-headline">
+                  <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  <div class="scroll-wrapper">
+                    <div class="scroll-text">Advertisement for JRF position under MoEFCC Sponsored Project</div>
+                  </div>
+                </div>
+                <div class="announcement-details">
+                  <p>Applications are now invited from highly motivated and eligible candidates for the posts of JRF (Junior Research
+                    Fellow) in the Project titled “Feasibility Assessment of Bioelectricity Generation and Optimization of
+                    substrate in Coupled Constructed Wetlands for Wastewater Treatment” in the Department of Civil
+                    Engineering at the NITD :- <a href="https://nitdelhi.ac.in/wp-content/uploads/2025/03/JRF-Advertiestment-March-2025-MoEFCC_Updated-1.pdf" target="_blank">Click here to know more</a></p>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-headline">
+                  <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  <div class="scroll-wrapper">
+                    <div class="scroll-text">Registration for STC  on Business Insights: Data Analytics and AI</div>
+                  </div>
+                </div>
+                <div class="announcement-details">
+                  <p>NITD jointly with IIIT-Gwalior is organising a 'One Week Short-Term Course on Decoding Business Insights: AI, Data Analytics and Research Synergies' from 29th May to 4th June 2025 (Online Mode). Registration will soon opened :- <a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/STC-DBI_AIDARS.pdf" target="_blank">Check Out to know more</a></p>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-headline">
+                  <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  <div class="scroll-wrapper">
+                    <div class="scroll-text">Admission Notice for M.Tech (SFS) Admission for the Academic Year 2025-26</div>
+                  </div>
+                </div>
+                <div class="announcement-details">
+                  <p>To download the admission notice regarding MTech Admission for the Academic Year 2025-26  :- <a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/Admission-Notice_M.Tech-SFS-Admission-_Academic-Year-2025-26.pdf" target="_blank">Click here to download</a></p>
+                </div>
+              </div>
+              <!-- Repeat more .announcement-item blocks as needed -->
+            </div>
+          </div>
+          <div class="news-cards">
+            <div class="card-1"><div class="img-wrapper"><img src="assets/images/Our glorious campus.Click Credits- @sowmyakranthi_03.png" alt=""></div>
+            <a href="#">
+              <h2>M.Tech & Ph.D Admission at NIT Delhi Opens Now !!</h2></a>
+              <p>The admission procedure for the M.Tech and Ph.D starts on</p>
+          </div>
+          <div class="card-2"><div class="img-wrapper"><img src="assets/images/phntech.jpg" alt="phn_technology"></div><a href="#">
+            <h2>NITD X PHN: Where Innovation meets Excellence</h2></a>
+          <p>@nitdelhiofficial and @phn_technology have joined hands to establish the Centre of Excellence (#CoE) for Robotics, Artificial Intelligence (#AI), and Internet of Things (#IoT). This collaboration promises to redefine innovation and create pathways for groundbreaking advancements in technology.</p>
+        </div>
+          <div class="card-3"><div class="img-wrapper"><img src="assets/images/ieeemainlecture.jpg" alt=""></div>
+          <a href="#">
+            <h2>NITD hosts IEEE lecture on Advanced Power Electronics!</h2></a>
+            <p>The Electrical Department of NITD, in collaboration with IEEE Delhi Section @ieeedelhissn, IEEE PELS-IES Society, IEEE PES-IAS Society @ieee.pes, IEEE TEMS Society @ieeetems, and the IEEE Student Branch of NIT Delhi @nitdieee, hosted a remarkable event on January 7, 2025.</p>
+        </div>
+          <div class="card-4"><div class="img-wrapper"><img src="assets/images/udaan_campaign.jpg" alt=""></div>
+          <a href="#">
+            <h2>Hygience and Nutrition Awareness: NITD in Govt.Schools</h2></a>
+            <p> @src.nitdelhi of NITD proudly conducted an impactful awareness campaign at Sarvodaya Kanya Vidyalaya No.1, Narela, focusing on sanitation, hygiene, and nutrition for young minds.</p>
+        </div>
+          </div>
+          <div class="news-section-head">
+            <div class="section-heading"> 
+            <img src="assets/icons/fa_newspaper-o.svg" alt="newspaper-icon">
+            <h2>CAMPUS BULLETIN &nbsp;&nbsp;@NITD</h2>
+            </div>
+            <button class="CTAview"><a href="#">VIEW ALL</a></button>
+          </div>
+          <div class="latest-updates-wrapper">
+            <h3>Latest Updates</h3>
+            <div class="ticker-container">
+              <ul class="latest-updates-list">
+                <li><a href="#">NIT Delhi is ranked 45 in Engineering Category by NIRF 2024 among 4000 colleges throughout India.</a></li>
+                <li> <a href="https://forms.gle/oRZsQXQTaAzYkquZ8">Registration link for M.Tech (SFS) admission for the Academic Year 2025-26 (https://forms.gle/oRZsQXQTaAzYkquZ8)</a></li>
+                <li><a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/Department-Wise-Syllabus-and-Weightage-of-Marks-_M.Tech-SFS-Admissions-for-the-Academic-Year-2025-26.pdf">Department Wise Syllabus and Weightage of Marks  _M.Tech (SFS) Admissions for the Academic Year 2025-26</a></li>
+                <li><a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/Information-Brochure-and-Application-Form-_M.Tech-SFS-Admission-_Academic-Year-2025-26.pdf">Information Brochure with Application Form for M.Tech (SFS) Admission for the Academic Year 2025-26</a></li>
+                <li><a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/Summer.pdf">Applications for DAViSE Lab Summer Internship 2025</a></a></li>
+                <li><a href="https://nitdelhi.ac.in/wp-content/uploads/2025/03/JRF-Advertiestment-March-2025-MoEFCC_Updated-1.pdf">Advertisement for JRF position under MoEFCC Sponsored Project.</a></li>
+                <li><a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/STC-DBI_AIDARS.pdf">Registration for STC  on Business Insights: Data Analytics and AI</a></li>
+                <li><a href="https://nitdelhi.ac.in/wp-content/uploads/2025/04/Admission-Notice_M.Tech-SFS-Admission-_Academic-Year-2025-26.pdf">Admission Notice for M.Tech (SFS) Admission for the Academic Year 2025-26</a></li>
+              </ul>
+            </div>
+            </div>
+          <div class="events-carousel-section">
+            <div class="carousel-header">
+              <div class="header-items">
+              <i class="fa-regular fa-calendar-plus fa-2x"></i>
+              <h2>Events & Seminars</h2>
+              </div>
+              <button class="cta-button"><a href="students/aspiring students/events.html">VIEW ALL</a></button>
+            </div>
+            <div class="event-carousel" id="carousel">
+              <div class="card">
+                <div class="image-wrapper"><img src="assets/images/Screenshot 2025-05-02 190916.jpg" alt="seminar-img"></div>
+                <h3>ZEAL'25, ANNUAL SPORTS FEST</h3>
+                <div class="date-time">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>14-17 Feb, 2025</p>
+                  <i class="fa-regular fa-clock"></i>
+                  <p>8:00am Onwards</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper"><img src="assets/images/frame.jpg" alt="event-img"></div>
+                <h3>FRAME, Photography Workshop</h3>
+                <div class="date-time">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>25 Sep, 2024</p>
+                  <i class="fa-regular fa-clock"></i>
+                  <p>3:45pm Onwards</p>
+                </div>
+              </div>
+            <div class="card">
+              <div class="image-wrapper"><img src="assets/images/radiance.jpg" alt="event-img"></div>
+              <h3>RADIANCE, 7-day Workshop</h3>
+              <div class="date-time">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>7-13 Oct, 2024</p>
+                <i class="fa-regular fa-clock"></i>
+                <p>5:30am Onwards</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper"><img src="assets/images/Blood-Donation-Drive-24.3.2025-1.webp" alt="seminar-img"></div>
+              <h3>NITD Blood Donation Drive 2025</h3>
+              <div class="date-time">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>14-17 Feb, 2025</p>
+                <i class="fa-regular fa-clock"></i>
+                <p>8:00am Onwards</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper"><img src="assets/images/ieelecture.jpg" alt="seminar-img"></div>
+              <h3>IEEE Seminar</h3>
+              <div class="date-time">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>14-17 Feb, 2025</p>
+                <i class="fa-regular fa-clock"></i>
+                <p>12:00pm Onwards</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper"><img src="assets/images/vasu.jpg" alt="seminar-img"></div>
+              <h3>Vasudaiv Kutumbakam'25</h3>
+              <div class="date-time">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>4-5 Apr, 2025</p>
+                <i class="fa-regular fa-clock"></i>
+                <p>3:30pm Onwards</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section id="about" class="section">
+      <div class="section-1">
+        <div class="circle-img img-1">
+          <img src="assets/images/bg_collage.png" alt="">
+        </div><div class="circle-img img-2">
+          <img src="assets/images/DSC_3395.jpg" alt="">
+        </div><div class="circle-img img-3">
+          <img src="assets/images/Capture credits- @vedant328 @payal_jain_1511 @couch._.pututu.webp" alt="">
+        </div>
+          <h1>About NITD</h1>
+      </div>
+      <div class="section-2">
+          <h1>About NITD</h1>
+      </div>
+      <div class="p-group">
+        <p>
+          National Institute of Technology Delhi is more than just an institute — it's a launchpad for passionate learners, dreamers, and doers. Established to foster academic excellence and research innovation, NIT Delhi nurtures a diverse community of students, faculty, and thinkers committed to transforming the world with knowledge.
+        </p>
+        <p>
+          With cutting-edge labs, dedicated mentors, and a strong focus on holistic development, we empower every student to turn ideas into action and ambition into achievement.
+        </p>
+      </div>
+      <button class="hero-content-button learn-more">Learn More
+        <i class="fa-solid fa-arrow-right"></i></button>
+    </section>
+    <div class="number-stats">
+      <img src="assets/images/campus.webp" class="parallax-img" />
+      <div class="text-group">
+        <h1 class="stats" data-count="3000">0</h1>
+        <h3>Students</h3>
+      </div>
+      <div class="text-group">
+        <h1 class="stats" data-count="400">0</h1>
+        <h3>Faculty & Staff</h3>
+      </div>
+      <div class="text-group">
+        <h1 class="stats" data-count="8">0</h1>
+        <h3>Departments</h3>
+      </div>
+      <div class="text-group">
+        <h1 class="stats" data-count="15">0</h1>
+        <h3>Clubs & Cells</h3>
+      </div>
+    </div>
+    <section class="academics-section">
+      <div class="section-head">
+        <div class="header-logo">
+          <img class="icon" src="assets/icons/scholar.svg" alt="lamp-icon">
+          <h1>Academics</h1>
+        </div>
+      <p>--- Fueling Research Excellence through Mentorship, Resources, and Global Collaborations ---</p>
+      </div>
+      <h2>Academic Units</h2>
+      <div class="acad-cards">
+        <a href="#" class="acad-card">
+            <img src="assets/icons/university.svg " alt="department-icon">
+            <h3>Departments</h3>
+        </a>
+        <a href="#" class="acad-card">
+          <img src="assets/icons/admin-block.svg " alt="admin-block-icon">
+          <h3>Admin-Block</h3>
+        </a>
+        <a href="#" class="acad-card">
+            <img src="assets/icons/university.svg " alt="department-icon">
+            <h3>Departments</h3>
+        </a>
+      </div>
+      <h2>Offered Programmes</h2>
+      <div class="program-section">
+        <div class="card-1 program-card"><div class="img-wrapper"><img src="assets/images/photo-2.webp" alt="photo"></div>
+            <a href="#">
+              <h2>Undergraduate Programmes</h2></a>
+              <p>Rich learning experiences that provide a broad liberal arts foundation and deep subject-area expertise</p>
+              <button class="CTAview"><a href="academics/course curriculum/btech_curr.html">KNOW MORE</a></button>
+          </div>
+          <div class="card-2 program-card"><div class="img-wrapper"><img src="assets/images/photo.webp" alt="phn_technology"></div><a href="#">
+            <h2>Postgraduate Programmes</h2></a>
+          <p>Unsurpassed opportunities to participate in the advancement of entire fields of knowledge</p>
+          <button class="CTAview"><a href="academics/course curriculum/mtech_curr.html">KNOW MORE</a></button>
+        </div>
+          <div class="card-3 program-card"><div class="img-wrapper"><img src="assets/images/departments.webp" alt=""></div>
+          <a href="#">
+            <h2>Doc & PostDoc Fellowships</h2></a>
+            <p>Fueling research excellence through mentorship, resources, and global collaboration.</p>
+            <button class="CTAview"><a href="https://nitdelhi.ac.in/wp-content/uploads/2024/06/Regulation-for-Post-Doctoral-Fellowship-PDF-Programme-2.pdf">KNOW MORE</a></button>
+        </div>
+      </div>
+      <button class="cta-button acad-button"><a href="academics/departments/cse.html">More on Academics</a></button>
+    </section>
+    <div class="number-stats">
+      <img src="assets/images/campus.webp" class="parallax-img" />
+    </div>
+    <section class="achievements">
+      <div class="section-head">
+        <div class="header-logo">
+          <img class="icon" src="assets/icons/game-icons_achievement.svg" alt="lamp-icon">
+          <h1>Proof of Progress</h1>
+        </div>
+      <p>--- Rankings, Awards, and Stories that validate our Relentless Pursuit of Excellence ---</p>
+      </div>
+      <div class="achieve-cards">
+        <a href="#" class="achieve-card">
+          <h2 class="stats-1" data-count="45">0th</h2>
+          <p>@ NIRF Rankings 2024</p>
+        </a>
+        <a href="#" class="achieve-card">
+          <h2 class="stats" data-count="25">0</h2>
+          <p>Patents</p>
+        </a>
+        <a href="#" class="achieve-card">
+          <h2 class="stats" data-count="7">0</h2>
+          <p>Startups</p>
+        </a>
+      </div>
+      <div class="img-wrapper-1">
+        <img class="bg-image" src="assets/images/alumni-1.jpeg" class="parallax-img-1" alt="alumni-1">
+        <i class="fa-solid fa-quote-left fa-10x"></i>
+        <p>" Throughout this journey, the unwavering support from National Institute of Technology Delhi, my parents and my brother Arin Jain , all the professors, and friends was invaluable. They stood by me every step of the way, making this achievement possible. "</p>
+        <div class="alumni-designation">
+          <h3>Arushi Jain</h3>
+        <p>Gold Medalist, Batch 2020-23</p>
+        <p>87LPA, Atlassian, Highest Ever Package</p>
+        </div>
+        <div class="img-wrapper-2"><img src="assets/images/alumni.jpeg" alt="ms.-arushi-jain"></div>
+        <div class="img-wrapper-3"><img src="assets/images/alumni.jpeg" alt="ms.-arushi-jain"></div>
+      </div>
+      <div class="recruiter-banner">
+        <h1>TOP RECRUITERS</h1>
+        <div class="recruiter-track">
+          <div class="recruiter-track-inner">
+            <img src="assets/icons/Adobe-logo.svg" alt="adobe-logo">
+            <img src="assets/icons/Atlassian-logo.svg" alt="Atlassian-logo">
+            <img src="assets/icons/amazon-logo.png" alt="Amazon-logo">
+            <img src="assets/icons/microsoft-logo.svg" alt="microsoft-logo">
+            <img src="assets/icons/nvidia-logo.svg" alt="nvidia-logo">
+            <img src="assets/icons/samsung-logo.svg" alt="samsung-logo">
+            <img src="assets/icons/uber-logo.svg" alt="uber-logo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="number-stats">
+      <img src="assets/images/nitd.webp" class="parallax-img parallax-img-2" />
+      <div class="text-group">
+        <h1 class="stats" data-count="100">0</h1>
+        <h3>Company Visited</h3>
+      </div>
+      <div class="text-group">
+        <h1 class="stats" data-count="200">0</h1>
+        <h3>Students Placed</h3>
+      </div>
+      <div class="text-group">
+        <h1 class="stats-2" data-count="15.75">0LPA</h1>
+        <h3>Average Package</h3>
+      </div>
+      <div class="text-group">
+        <h1 class="stats-2" data-count="62">0LPA</h1>
+        <h3>Highest Package</h3>
+      </div>
+    </div>
+    <section class="campus-life">
+      <div class="faq-card">
+        <div class="faq-top">
+          <div class="faq-header">
+            <div class="header-items">
+              <h2>FAQS</h2>
+              <i class="fa-solid fa-circle-question fa-2x"></i>
+            </div>
+            <button class="cta-button"><a href="#">VIEW ALL</a></button>
+          </div>
+          <p>FREQUENTLY ASKED QUESTIONS</p>
+        </div>
+        <div class="announcement-container faq-container">
+          <!-- Repeat this .announcement-item block for adding more announcements -->
+          <div class="announcement-item faq-item">
+            <div class="announcement-headline">
+              <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              <div class="scroll-wrapper">
+                <div class="scroll-text">What is the login and password for the portal?</div>
+              </div>
+            </div>
+            <div class="faq-details">
+              <p>There is an option "Forgot Password'' on the login page. On entering your id you will get a password generation link on your NIT Delhi webmail. This needs to be done.</p>
+            </div>
+          </div>
+          <div class="announcement-item faq-item">
+            <div class="faq-headline">
+              <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              <div class="scroll-wrapper">
+                <div class="scroll-text">What documents do we need to upload for the verification for off-campus interns and how?</div>
+              </div>
+            </div>
+            <div class="faq-details">
+              <p>If your internship is ongoing then upload the offer letter for your ongoing internship and in case your internship is over upload your internship completion certificate mentioning the date of completion.</p>
+            </div>
+          </div>
+          <div class="announcement-item faq-item">
+            <div class="faq-headline">
+              <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              <div class="scroll-wrapper">
+                <div class="scroll-text">What are all those sections that will be on second page and can we write anything on that page?</div>
+              </div>
+            </div>
+            <div class="faq-details">
+              <p>The second page will have your approved PORs, ECAs, Courses Done and JEE Rank. The former two are taken from the E-certification portal and the latter two are provided by the UG Section. You have the liberty to show the entries on the second page using toggle switches.</p>
+            </div>
+          </div>
+          <div class="announcement-item faq-item">
+            <div class="faq-headline">
+              <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              <div class="scroll-wrapper">
+                <div class="scroll-text">Can we apply off-campus to a company which comes to NITD but not for our department?</div>
+              </div>
+            </div>
+            <div class="faq-details">
+              <p>No, you can not apply to companies that visit on-campus even if they aren't open for your department. You can raise requests through the nucleus team of your Department to make your department eligible when the company registers.</p>
+            </div>
+          </div>
+          <div class="announcement-item faq-item">
+            <div class="faq-headline">
+              <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              <div class="scroll-wrapper">
+                <div class="scroll-text">Can we add the ongoing courses/projects (on-campus) on the verified page?</div>
+              </div>
+            </div>
+            <div class="faq-details">
+              <p>The verified page(second page) contains points approved by Ecertification or by UG Section. Students do not have the liberty to add points on their own on the verified page. Only completed courses can be mentioned on this page.</p>
+            </div>
+          </div>
+          <div class="announcement-item faq-item">
+            <div class="faq-headline">
+              <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              <div class="scroll-wrapper">
+                <div class="scroll-text">How will we know that we are shortlisted for a certain company's interview?</div>
+              </div>
+            </div>
+            <div class="faq-details">
+              <p>In the Applications section, your status will be updated to shortlisted. We may also put lists of company shortlists in the notifications section of the portal.</p>
+            </div>
+          </div>
+          <div class="announcement-item faq-item">
+            <div class="faq-headline">
+              <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              <div class="scroll-wrapper">
+                <div class="scroll-text">Where can we see the list of companies that are coming to the campus?</div>
+              </div>
+            </div>
+            <div class="faq-details">
+              <p>In the 'Companies on Campus' section, all the companies visiting the campus will be visible.</p>
+            </div>
+          </div>
+          <div class="announcement-item faq-item">
+            <div class="faq-headline">
+              <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              <div class="scroll-wrapper">
+                <div class="scroll-text">Where will the test links be shared and on which platform would they be conducted?</div>
+              </div>
+            </div>
+            <div class="faq-details">
+              <p>The test links will either be shared on the OCS portal or mailed to you. The testing platform will depend on the company.</p>
+            </div>
+          </div>
+          <!-- Repeat more .announcement-item blocks as needed -->
+        </div>
+      </div>
+      <div class="photo-gallery">
+        <div class="photo-gallery-top">
+          <div class="photo-gallery-header">
+            <div class="header-items">
+              <h2>PHOTO GALLERY</h2>
+              <i class="fa-solid fa-images fa-2x"></i>
+            </div>
+            <button class="cta-button"><a href="#">VIEW ALL</a></button>
+          </div>
+          <p>MEMORIES WE MADE</p>
+        </div>
+        <div class="img-group">
+          <div class="gallery-wrapper gallery-1"><img class="gallery gallery-1" src="assets/images/gallery-1.webp" alt="gallery-1">
+          <img src="assets/icons/magnify-icon.svg" class="zoom-icon" alt="magnify-icon">
+          </div>
+          <div class="gallery-wrapper gallery-2"><img class="gallery gallery-2" src="assets/images/gallery-2.webp" alt="gallery-2">
+            <img src="assets/icons/magnify-icon.svg" class="zoom-icon" alt="magnify-icon">
+          </div>
+          <div class="gallery-wrapper gallery-3"><img class="gallery gallery-3" src="assets/images/gallery-3.webp" alt="gallery-3">
+            <img src="assets/icons/magnify-icon.svg" class="zoom-icon" alt="magnify-icon"></div>
+          <div class="gallery-wrapper gallery-4"><img class="gallery gallery-4" src="assets/images/gallery-4.webp" alt="gallery-4">
+            <img src="assets/icons/magnify-icon.svg" class="zoom-icon" alt="magnify-icon"></div>
+          <div class="gallery-wrapper gallery-5"><img class="gallery gallery-5" src="assets/images/gallery-5.webp" alt="gallery-5">
+            <img src="assets/icons/magnify-icon.svg" class="zoom-icon" alt="magnify-icon"></div>
+          <div class="gallery-wrapper gallery-6"><img class="gallery gallery-7" src="assets/images/gallery-6.webp" alt="gallery-6">
+            <img src="assets/icons/magnify-icon.svg" class="zoom-icon" alt="magnify-icon"></div>
+          <div class="gallery-wrapper gallery-8"><img class="gallery gallery-8" src="assets/images/gallery-8.webp" alt="gallery-8">
+            <img src="assets/icons/magnify-icon.svg" class="zoom-icon" alt="magnify-icon"></div>
+          <div class="gallery-wrapper gallery-9"><img class="gallery gallery-9" src="assets/images/gallery-9.webp" alt="gallery-9">
+            <img src="assets/icons/magnify-icon.svg" class="zoom-icon" alt="magnify-icon"></div>
+          <div class="gallery-wrapper gallery-10"><img src="assets/images/gallery-10.heic" alt="gallery-10" class="gallery-10 gallery">
+            <img src="assets/icons/magnify-icon.svg" class="zoom-icon" alt="magnify-icon"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-1">
+      <div class="info">
+        <div class="head">
+          <img src="assets/images/nitd-subtle-logo.png" alt="">
+          <h3>NATIONAL INSTITUTE OF TECHNOLOGY DELHI</h3>
+        </div>
+        <div class="address-info">
+          <i class="fa-solid fa-location-dot icon"></i>
+          <p>Plot No. FA7, Zone P1, GT Karnal Road, Delhi-11036, India </p>
+        </div>
+        <div class="mail-info">
+          <i class="fa-regular fa-envelope"></i>
+          <p>email-secretary@nitdelhi.ac.in</p>
+        </div>
+        <div class="mobile-info">
+          <i class="fa-solid fa-phone"></i>
+          <p>011-33861005</p>
+        </div>
+        <div class="mobile-info">
+          <i class="fa-solid fa-phone"></i>
+          <p>+91-1133861005</p>
+        </div>
+      </div>
+      <div class="social-icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      
+    <div class="quick-links">
+      <h2>Important Links</h2>
+      <a href="https://gian.iitkgp.ac.in/" target="_blank" rel="noopener noreferrer">GIAN Cell & Portal</a>
+      <a href="https://nitdelhi.ac.in/moe-notifications/" target="_blank" rel="noopener noreferrer">MoE Notifications </a>
+      <a href="https://nitdelhi.ac.in/internal-complaints-committee/" target="_blank" rel="noopener noreferrer">Internal Complain Commitee</a>
+      <a href="https://nitdelhi.ac.in/param-shavak-supercomputing-facility/" target="_blank" rel="noopener noreferrer">Param Shavak Facility</a>
+      <a href="https://nad.digilocker.gov.in/" target="_blank" rel="noopener noreferrer">NITD Research Bulletin</a>
+      <a href="https://nitdelhi.ac.in/faculty-staff-and-student-grievance-cell/" target="_blank" rel="noopener noreferrer">Faculty, Staff & Student Grievance Cell</a>
+      <a href="https://nitdelhi.ac.in/annual-reports/" target="_blank" rel="noopener noreferrer">Annual Reports</a>
+    </div>
+    <div class="quick-links">
+      <h2>Quick Links</h2>
+      <a href="https://gian.iitkgp.ac.in/" target="_blank" rel="noopener noreferrer">DASA Admissions</a>
+      <a href="https://nitdelhi.ac.in/moe-notifications/" target="_blank" rel="noopener noreferrer">National Fellowships </a>
+      <a href="https://nitdelhi.ac.in/internal-complaints-committee/" target="_blank" rel="noopener noreferrer">NAD</a>
+      <a href="https://nitdelhi.ac.in/param-shavak-supercomputing-facility/" target="_blank" rel="noopener noreferrer">Virtual Classroom (NKN)</a>
+      <a href="https://nad.digilocker.gov.in/" target="_blank" rel="noopener noreferrer">Right to Information</a>
+      <a href="https://nitdelhi.ac.in/faculty-staff-and-student-grievance-cell/" target="_blank" rel="noopener noreferrer">Startup NIT Delhi</a>
+      <a href="https://nitdelhi.ac.in/annual-reports/" target="_blank" rel="noopener noreferrer">FIT India</a>
+    </div>
+    </div>
+    <div class="footer-2">
+      Copyright &copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;National Institute of Technology Delhi&trade; &nbsp; 2025&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
