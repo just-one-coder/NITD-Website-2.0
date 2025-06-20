@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* #define color palettes */
+
+  --gray-light: #e1e1e3;
+  --subtle: #e3e3e3;
+  --dark-purple: #0e0e23;
+  --navy-dark: #1c1d75;
+  --indigo: #61619c;
+  --lavender: #8384b2;
+  --cool-gray1: #7b7cac;
+  --cool-gray2: #7374ac;
+  --violet-deep: #3f3e8c;
+  --slate: #4c4c94;
+  --midnight: #2d2e83;
+  --nav-hover: #333486;
+
+  --light-color: #f5f7fa;
+  --dark-color: #121212;
+
+  /* #define dark color theme palettes */
+
+  /* #define font-family to use in the body */
+
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --special-font-heading: "Orbitron", sans-serif;
+  --versatile-font: "Exo 2", sans-serif;
+  --sleek-tech-font: "Rajdhani", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--light-color);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, background-color 0.3s;
+  z-index: 9999;
+  background-color: transparent;
+}
+
+.body-bg-image, .bg{
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+
+.body-bg-image{
+  position: fixed;
+  object-fit: fill;
+  z-index: -2;  
+}
+
+.bg{
+  background-color: var(--dark-purple);
+  opacity: 45%;
+  position: fixed;
+  z-index: -1;
+}
